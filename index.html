@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/money.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>Real-Time Exchange Rate</h1>
+            <span>Update exchange rate every 5 minutes </span>
+            <button class="refresh">Manually update</button>
+            <br>
+            <br>
+            <div id="money">
+                <span>Please enter the amount (TWD): </span>
+                <input type="text" v-model="basic">
+                <br><br>
+                <p><span>USD (美金):</span><br class="break"> {{USD}}</p>
+                <p><span>JPY (日圓):</span><br class="break"> {{JPY}}</p>
+                <p><span>HKD (港幣):</span><br class="break"> {{HKD}}</p>
+                <p><span>EUR (歐元):</span><br class="break"> {{EUR}}</p>
+                <p><span>CNY (人民幣):</span><br class="break"> {{CNY}}</p>
+                <p><span>GBP (英鎊):</span><br class="break"> {{GBP}}</p>
+                <p><span>AUD (澳幣):</span><br class="break"> {{AUD}}</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="js/all.js"></script>
+
+
+</body>
+
+</html>
